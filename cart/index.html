@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Carts</title>
+  </head>
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="company-name">SHOP.CO</div>
+        <div class="search-bar">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search by ID or Name..."
+          />
+          <button id="search-button">Search</button>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+
+    <h1>Product Cards</h1>
+    <div class="product-container" id="product-container"></div>
+    <div class="container">
+      <div class="cart-items" id="cart-items">
+
+      </div>
+      <div class="order-summary">
+        <h2>Order Summary</h2>
+        <p><span>Subtotal</span><span>$565</span></p>
+        <p><span>Discount (-20%)</span><span style="color: red">-$113</span></p>
+        <p><span>Delivery Fee</span><span>$15</span></p>
+        <p class="total"><span>Total</span><span>$467</span></p>
+        <div class="promo-code">
+          <div class="input-container">
+            <i class="fa-solid fa-tag"></i>
+            <input type="text" placeholder="Add promo code" />
+          </div>
+          <button>Apply</button>
+        </div>        
+        <a href="#" class="checkout-button"
+          >Go to Checkout <i class="fas fa-arrow-right"></i
+        ></a>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

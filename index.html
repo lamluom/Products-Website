@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>SHOP.CO</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="logo">
+        <a href="#" onclick="goHome()"><h1 class="header-Logo">SHOP.CO</h1></a>
+      </div>
+      <div class="search-bar">
+        <div class="search-container">
+          <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search for products..."
+          />
+          <button id="search-button">Search</button>
+        </div>
+      </div>
+      <div class="cart">
+        <a href="#product-section"><img src="cart-icon.png" alt="Cart" /></a>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <section class="main-section">
+      <div class="content">
+        <h1>FIND CLOTHES THAT MATCH YOUR STYLE</h1>
+        <p>
+          Browse through our diverse range of meticulously crafted garments,
+          designed to bring out your individuality and cater to your sense of
+          style.
+        </p>
+        <a href="#product-section"><button>Shop Now</button></a>
+      </div>
+      <div class="statistics">
+        <div class="stat">
+          <h3>200+</h3>
+          <p>International Brands</p>
+        </div>
+        <div class="stat">
+          <h3>2,000+</h3>
+          <p>High-Quality Products</p>
+        </div>
+        <div class="stat">
+          <h3>30,000+</h3>
+          <p>Happy Customers</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands-section">
+      <div class="brand-logo">
+        <img src="zara-logo.png" alt="Zara" />
+      </div>
+      <div class="brand-logo">
+        <img src="gucci-logo.png" alt="Gucci" />
+      </div>
+      <div class="brand-logo">
+        <img src="prada-logo.png" alt="Prada" />
+      </div>
+    </section>
+
+    <!-- Product Section -->
+    <section id="product-section">
+      <aside>
+        <ul>
+          <li>
+            <h4 onclick="fetchSearchResults('home-decoration')">
+              Home Decoration
+            </h4>
+          </li>
+          <li><h4 onclick="fetchSearchResults('furniture')">Furniture</h4></li>
+          <li>
+            <h4 onclick="fetchSearchResults('sports-accessories')">
+              Sports Accessories
+            </h4>
+          </li>
+          <li>
+            <h4 onclick="fetchSearchResults('sunglasses')">Sunglasses</h4>
+          </li>
+          <li>
+            <h4 onclick="fetchSearchResults('smartphones')">SmartPhones</h4>
+          </li>
+          <li><h4 onclick="fetchSearchResults('beauty')">Beauty</h4></li>
+          <li>
+            <h4 onclick="fetchSearchResults('motorcycle')">Motorcycle</h4>
+          </li>
+          <li>
+            <h4 onclick="fetchSearchResults('mens-watches')">Mens Watches</h4>
+          </li>
+          <li>
+            <h4 onclick="fetchSearchResults('mens-shoes')">Mens Shoes</h4>
+          </li>
+        </ul>
+      </aside>
+
+      <main>
+        <h1>Product Cards</h1>
+        <div class="product-container" id="product-container">
+          <!-- Product cards will be dynamically generated here -->
+        </div>
+      </main>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h4>About Us</h4>
+          <p>
+            At SHOP.CO, we provide a wide variety of quality products to help
+            you express your unique style. Join our community of happy customers
+            today!
+          </p>
+        </div>
+        <div class="footer-section links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#product-section">Shop</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h4>Contact Us</h4>
+          <p>
+            Email:
+            <a href="mailto:lamluom123456@gmail.com">lamluom123456@gmail.com</a>
+          </p>
+          <p>Phone: <a href="tel:+201061046184">+201061046184</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 SHOP.CO | All Rights Reserved</p>
+        <div class="socials">
+          <a
+            href="https://www.facebook.com/profile.php?id=100011362466411"
+            target="_blank"
+            aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/lamluom_alfaydi/"
+            target="_blank"
+            aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/lamluom_alfaydi/"
+            target="_blank"
+            aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https:" target="_blank" aria-label="Pinterest"
+            ><i class="fab fa-pinterest-p"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
